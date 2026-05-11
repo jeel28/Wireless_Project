@@ -1,2 +1,0 @@
-Method,Dataset,#Clients,#Rounds,Test Accuracy (%),Convergence Round,Comm. Cost (MB),ToA@50 (s),ToA@60 (s),ToA@70 (s)
-SecureFedPROM (Ours),FMNIST,10,50,45.17,N/A,12927.8,N/A,N/A,N/A
