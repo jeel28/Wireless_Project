@@ -1,0 +1,37 @@
+# 2. Software Environment & Setup [cite: 10]
+system:
+  seed: 42
+  python_version: "3.10"
+  framework: "flwr"
+  device: "cpu"  # Change to "cuda" if you have a GPU
+
+# 3. Experimental Settings & Baseline [cite: 12, 20]
+training:
+  dataset: "mnist"
+  [cite_start]num_clients: 100       # Target scales: 10, 50, 100 [cite: 12]
+  num_rounds: 50
+  [cite_start]fraction_fit: 0.5      # Mandatory: 50% clients per round [cite: 20]
+  [cite_start]local_epochs: 5        # Mandatory local training [cite: 20]
+  [cite_start]batch_size: 32         # Mandatory [cite: 20]
+  [cite_start]learning_rate: 0.01    # Mandatory [cite: 20]
+  [cite_start]momentum: 0.9          # Mandatory [cite: 20]
+
+# 4.3 Data Partitioning [cite: 24]
+data:
+  partitioning_method: "dirichlet"
+  [cite_start]alpha: 0.1             # Options: 0.01, 0.1, 0.5, 1.0 [cite: 24]
+
+# Oort Specific Parameters [cite: 455, 615]
+oort:
+  [cite_start]epsilon: 0.1           # Exploration factor [cite: 455]
+  [cite_start]pacer_step: 20         # Step window W [cite: 614]
+  [cite_start]penalty_alpha: 2.0     # Straggler penalty [cite: 615]
+  [cite_start]target_duration: 10.0  # Preferred round duration T [cite: 430]
+
+# SecureFedPROM Multi-Criteria Weights [cite: 1633, 1636]
+# Weights for PROMETHEE ranking (sum must equal 1.0)
+secure_fed_prom:
+  weights:
+    [cite_start]statistical_utility: 0.25 # Data quality [cite: 1531, 1593]
+    [cite_start]system_utility: 0.25      # Hardware/Network [cite: 1529, 1575]
+    [cite_start]trust_score: 0.50         # Security priority [cite: 1532, 1635]

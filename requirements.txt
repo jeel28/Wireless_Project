@@ -1,0 +1,14 @@
+flwr[simulation]==1.8.0
+torch==2.2.0
+torchvision==0.17.0
+numpy==1.26.4
+pandas==2.2.0
+matplotlib==3.8.4
+seaborn==0.12.2
+scikit-learn==1.4.2
+scipy==1.11.4
+cryptography==41.0.7
+protobuf==5.29.1
+pyyaml==6.0.1
+tqdm==4.66.2
+ray==2.10.0
