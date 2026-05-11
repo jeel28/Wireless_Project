@@ -142,12 +142,6 @@ Supported datasets:
 - FashionMNIST
 - CIFAR-10
 
-Dataset files are stored inside:
-
-```text
-./data/
-```
-
 ---
 
 # 🚀 Running the Project
@@ -336,53 +330,6 @@ Generated outputs may include:
 - Loss values
 - Communication statistics
 - PNG graph plots
-
----
-
-# 🛠️ Common Issues
-
-## 1️⃣ GitHub Large File Error
-
-If GitHub rejects dataset files:
-
-Add this to `.gitignore`
-
-```gitignore
-data/
-*.tar.gz
-*.csv
-```
-
----
-
-## 2️⃣ CUDA Not Available
-
-Check GPU availability:
-
-```python
-import torch
-print(torch.cuda.is_available())
-```
-
----
-
-## 3️⃣ Flower Simulation Error
-
-Install simulation dependencies:
-
-```bash
-pip install flwr[simulation]
-```
-
----
-
-## 4️⃣ Ray Memory Error
-
-Reduce:
-
-- Number of clients
-- Batch size
-- Number of rounds
 
 ---
 
