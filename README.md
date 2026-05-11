@@ -1,5 +1,17 @@
 # Wireless Project — Federated Learning using FedAvg, Oort, and SecFedPROM
 
+# # 👨‍💻 Authors
+
+| Name | RollNo |
+|---|---|
+| Tirth Patel | 2511ai07 |
+| Avni Verma | 2511ai08 |
+| Jeel Patel | 2511ai12 |
+| Shreya Singhal | 2511ai21 |
+| Ved Parkash | 2511ai58 |
+| Optimizer | SGD |
+| Framework | Flower |
+
 ## 📌 Project Overview
 
 This project implements and compares multiple Federated Learning (FL) strategies:
@@ -370,9 +382,12 @@ python main.py
 ```
 
 ---
-# 👨‍💻 Authors
 
-Project developed for Federated Learning and Wireless Communication research implementation.
+# 🎥 Project Demonstration Video
+
+YouTube Project Link:
+
+[Watch Project Demo](https://youtu.be/NFdbD4v6Y9g)
 
 ---
 
