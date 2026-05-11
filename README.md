@@ -9,8 +9,6 @@
 | Jeel Patel | 2511ai12 |
 | Shreya Singhal | 2511ai21 |
 | Ved Parkash | 2511ai58 |
-| Optimizer | SGD |
-| Framework | Flower |
 
 ## 📌 Project Overview
 
