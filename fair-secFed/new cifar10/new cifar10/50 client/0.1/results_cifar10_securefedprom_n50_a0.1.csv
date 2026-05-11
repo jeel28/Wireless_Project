@@ -1,0 +1,2 @@
+Method,Dataset,#Clients,#Rounds,Test Accuracy (%),Convergence Round,Comm. Cost (MB),ToA@50 (s),ToA@60 (s),ToA@70 (s)
+SecureFedPROM (Ours),CIFAR10,50,50,55.98,N/A,1803.3,441.3,N/A,N/A
