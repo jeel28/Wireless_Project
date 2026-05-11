@@ -399,18 +399,6 @@ Reduce:
 
 ---
 
-# 👨‍💻 Authors
-
-Project developed for Federated Learning and Wireless Communication research implementation.
-
----
-
-# 📄 License
-
-This project is for academic and research purposes.
-
----
-
 # ⭐ Recommended Workflow
 
 ## Run FedAvg
@@ -435,12 +423,10 @@ python main.py
 ```
 
 ---
+# 👨‍💻 Authors
 
-# ✅ Final Notes
+Project developed for Federated Learning and Wireless Communication research implementation.
 
-- Use GPU for faster training
-- Avoid uploading datasets to GitHub
-- Keep `data/` inside `.gitignore`
-- Save results regularly
-- Compare communication cost and convergence between strategies
+---
+
 
